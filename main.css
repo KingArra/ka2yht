@@ -14,7 +14,6 @@
 html, body {
   overflow: hidden;
   height: 100%;
-
   position: fixed;
   -webkit-overflow-scrolling: touch;
   -webkit-user-select: none;
@@ -198,7 +197,7 @@ body.mobile #linkHolder { display: none; }
 }
 
 .startMenuHolder.shrinkable {
-  width: calc(149% - 755px);
+  width: calc(100% - 780px);
 }
 body.mobile .startMenuHolder {
   height: 300px;
@@ -577,7 +576,7 @@ body.mobile .icon {
   position: relative;
   top: 0px;
   z-index: 2;
-  max-width: 755px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 body.mobile #startMenuWrapper { max-width: 780px; }
