@@ -1,13 +1,4 @@
-# Gamemode Poll [2019-11-14] What gamemodes do you like?
-- 9, 2019-12-19T00:00:00.000Z, table
-- |::<b>With Maze</b>|::<b>No Maze</b>
-- <b>Number of Teams<b> |<b>2</b>|<b>3</b>|<b>4</b>|<b>2</b>|<b>3</b>|<b>4</b>
-- TDM                                                                       |X|X|X|X|X|X
-- Domination                                                                |X|X|X|X|X|X
-- Mothership                                                                |X|X|X|X|X|X
-- Open TDM                                                                  |X|X|X|X|X|X
-- Open Domination                                                           |X|X|X|X|X|X
-- Assault <span class="tooltip"><span>Same as the D-Day event</span></span> |X|X|X|X|X|X
+
 
 # Balance [2019-07-21]
 - Nerfed Mega-Smasher's movement speed but made it immune to knockbacks.
