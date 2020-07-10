@@ -578,8 +578,8 @@
           b.playerName = z.name = d.value;
                 b.playerKey = "z" === b.server.id ? ua : va;
                     d = document.getElementById("playerKeyInput");
-                    I.submitToLocalStorage("playerKeyInput");
-                    b.playerKey = z.key = d.value;          b.screenWidth = window.innerWidth;
+                    H.submitToLocalStorage("playerKeyInput");
+                    b.playerKey = z.key = d.value; 
           b.screenHeight = window.innerHeight;
           document.getElementById("startMenuWrapper").style.top = "-600px";
           document.getElementById("gameAreaWrapper").style.opacity = 1;

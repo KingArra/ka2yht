@@ -129,10 +129,12 @@ input {
 }
 
 #playerNameInput {
-  padding: 10px;
+  padding: 5px;
   font-size: larger;
 }
-
+#playerKeyInput {
+  padding: 5px;
+}
 input:focus {
   border: solid 1px #CCCCCC;
 }
