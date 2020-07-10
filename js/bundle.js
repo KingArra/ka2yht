@@ -4335,8 +4335,8 @@
             type: "ffa",
             code: "glitch-worldwide-f",
             at: p.glitch('your-server'),
-            prefer: !0
-          //  secure: -1
+            prefer: !0,
+            secure: -1
           },
           {
             visible: 0,
@@ -4345,9 +4345,9 @@
             code: "glitch-worldwide-3",
             at: p.glitch('your-server'),
            // featured: 1, // For Featured Status.
-           // secure: -1
+           secure: -1,
+           prefer: !0,
           },
-
         ]
           .map((a, e) => ({ data: a, i: e }))
           .sort((a, e) =>
