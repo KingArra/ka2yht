@@ -4330,20 +4330,22 @@
             untrusted: !0
           },
           {
-            visible: 2,
+            visible: 0,
             id: "a",
-            type: "0unk",
+            type: "ffa",
             code: "glitch-worldwide-f",
             at: p.glitch('your-server'),
-            secure: -1
+            prefer: !0
+          //  secure: -1
           },
           {
-            visible: 2,
+            visible: 0,
             id: "b",
-            type: "0unk",
-            code: "glitch-worldwide-",
+            type: "ffa",
+            code: "glitch-worldwide-3",
             at: p.glitch('your-server'),
-            secure: -1
+           // featured: 1, // For Featured Status.
+           // secure: -1
           },
 
         ]
