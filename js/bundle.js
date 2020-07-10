@@ -576,8 +576,10 @@
           d = document.getElementById("playerNameInput");
           H.submitToLocalStorage("playerNameInput");
           b.playerName = z.name = d.value;
-          b.playerKey = "z" === b.server.id ? wa : xa;
-          b.screenWidth = window.innerWidth;
+                b.playerKey = "z" === b.server.id ? ua : va;
+                    d = document.getElementById("playerKeyInput");
+                    I.submitToLocalStorage("playerKeyInput");
+                    b.playerKey = z.key = d.value;          b.screenWidth = window.innerWidth;
           b.screenHeight = window.innerHeight;
           document.getElementById("startMenuWrapper").style.top = "-600px";
           document.getElementById("gameAreaWrapper").style.opacity = 1;
