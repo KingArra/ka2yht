@@ -4290,6 +4290,7 @@
           {
             unknown: ["Unknown", null],
             local: ["Local", null],
+            worldwide: ["Worldwide", null],
             virginia: ["US East", -4],
             montreal: ["US East", -4],
             oregon: ["US West", -7],
@@ -4330,159 +4331,21 @@
           },
           {
             visible: 2,
-            id: "x",
+            id: "a",
             type: "0unk",
-            code: "local-local-e9localhost",
-            at: "localhost:8080",
+            code: "glitch-worldwide-f",
+            at: p.glitch('your-server'),
             secure: -1
           },
           {
-            visible: 0,
-            id: "pa",
-            type: "2tdm",
-            code: "dvi-virginia-2",
-            at: p.arras("p"),
-            secure: -1,
-            prefer: !0
-          },
-          {
-            visible: 0,
-            id: "pb",
-            type: "2tdm",
-            code: "dvi-virginia-m2",
-            at: p.arras("p", 5001),
-            secure: -1,
-            prefer: !0
-          },
-          {
-            visible: w,
-            id: "ga",
-            type: "1ffa",
-            code: "glitch-virginia-f",
-            at: p.glitch("ga")
-          },
-          {
-            visible: 3,
-            id: "gb",
-            type: "4tdm",
-            code: "glitch-virginia-4",
-            at: p.glitch("gb")
-          },
-          {
-            visible: 3,
-            id: "gf",
-            type: "3dom",
-            code: "glitch-virginia-m3d",
-            at: p.glitch("gf")
-          },
-          {
-            visible: 3,
-            id: "gm",
-            type: "2mot",
-            code: "glitch-virginia-m2m",
-            at: p.glitch("gm")
-          },
-          {
-            visible: 1,
-            id: "c",
+            visible: 2,
+            id: "b",
             type: "0unk",
-            code: "glitch-virginia-p",
-            at: p.glitch("c")
-          },
-          {
-            id: "d",
-            type: "0unk",
-            code: "glitch-virginia-e7special",
-            at: p.glitch("d")
-          },
-          {
-            visible: 1,
-            id: "e",
-            type: "0unk",
-            code: "glitch-virginia-e7staging",
-            at: p.glitch("e")
-          },
-          {
-            id: "sa",
-            type: "1ffa",
-            code: "os-oregon-f",
-            at: p.openshift("oa", "arras-c0")
-          },
-          {
-            visible: a,
-            id: "ha",
-            type: "1ffa",
-            code: "heroku-virginia-f",
-            at: p.heroku("ha")
-          },
-          {
-            id: "va",
-            type: "2mot",
-            code: "vultr-sv-m2m",
-            at: p.arras("va"),
+            code: "glitch-worldwide-",
+            at: p.glitch('your-server'),
             secure: -1
           },
-          {
-            visible: 0,
-            id: "ba",
-            type: "2mot",
-            code: "buyvm-la-m2m",
-            at: p.arras("ba"),
-            secure: -1,
-            prefer: !0
-          },
-          {
-            visible: 0,
-            id: "ea",
-            type: "4tdm",
-            code: "extravm-montreal-4",
-            at: p.arras("ec"),
-            secure: -1,
-            prefer: !0
-          },
-          {
-            visible: 0,
-            id: "eb",
-            type: "3tdm",
-            code: "extravm-montreal-e5space3",
-            at: p.arrasUnknown("ea", 5001),
-            secure: -1,
-            featured: !0
-          },
-          {
-            id: "na",
-            type: "1ffa",
-            code: "hetzner-germany-mf",
-            at: p.arras("na"),
-            secure: -1
-          },
-          {
-            visible: 0,
-            id: "oa",
-            type: "1ffa",
-            code: "ovh-london-f",
-            at: p.arras("oa"),
-            secure: -1,
-            prefer: !0
-          },
-          {
-            visible: 0,
-            id: "ob",
-            type: "3tdm",
-            code: "ovh-virginia-w31dd3day",
-            at: p.arras("ob"),
-            secure: -1,
-            prefer: !0
-          },
-          {
-            visible: 0,
-            id: "oc",
-            type: "1ffa",
-            code: "ovh-singapore-mf",
-            at: p.arras("oc"),
-            secure: -1,
-            prefer: !0
-          }
+
         ]
           .map((a, e) => ({ data: a, i: e }))
           .sort((a, e) =>
