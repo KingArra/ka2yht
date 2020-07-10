@@ -79,7 +79,7 @@
         <div class="startMenuHolder">
           <div class="sliderHolder">
             <div class="slider startMenuSlidingContent">
-              <center><a href="http://arras-io-official.glitch.me" class="icon" tabindex="-1"><img src="https://cdn.glitch.com/project-avatar/0e879858-e007-493b-b8bb-2c67d6811f4f.png?1540948766417" class="icon" alt="arras icon"></a></center>
+              <center><a href="http://arras-client-template-new.glitch.me" class="icon" tabindex="-1"><img src="https://cdn.glitch.com/project-avatar/0e879858-e007-493b-b8bb-2c67d6811f4f.png?1540948766417" class="icon" alt="arras icon"></a></center>
               <h1>arras.io</h1>
               <div class="serverSelector shadowScroll"><table><tbody id="serverSelector"></tbody></table></div>
               <input type="text" autofocus tabindex="1" spellcheck="false" placeholder="This is the tale of" id="playerNameInput" maxlength="24">
@@ -222,15 +222,7 @@
   if (navigator.serviceWorker) {
     navigator.serviceWorker.register('/sw.js', { scope: '/' }).then(registration => console.log('Service Worker Registered'))
   }
-  if (window !== window.top || (window.location.hostname.slice(-9) !== '.arras.io' && ['localhost', 'arras-io-official.glitch.me'].indexOf(window.location.hostname) === -1)) {
-    window.addEventListener('load', function() {
-      document.write('<h1>You are on a framed version of arras, the original game is at <a href="http://arras-io-official.glitch.me/">http://arras-io-official.glitch.me/</a></h1>')
-    })
-    document.body.addEventListener('click', function() {
-      window.top.location = 'http://arras-io-official.glitch.me'
-    })
-    window.top.location = 'http://arras-io-official.glitch.me'
-  }
+
   window.onerror = function(message, source, lineno, colno, error) {
     window.onerror = null
     if (error) error = error.toString()
