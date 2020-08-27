@@ -4196,12 +4196,10 @@
     },
     function(r) {
       const p = {
-        openshift: (a, e) =>
-          `n-${a}-${e}.7e14.starter-us-west-2.openshiftapps.com`,
-        glitch: a => `arras-n-${a}.glitch.me`,
-        heroku: a => `arras-${a}.herokuapp.com`,
-        arras: (a, e = 5e3) => `ip-${a}.arras.io:${e}`,
-        arrasUnknown: (a, e = 5e3) => `ipu-${a}.arras.io:${e}`
+        openshift: (a, e) => `n-${a}-${e}.7e14.starter-us-west-2.openshiftapps.com`,
+            glitch: a => `${a}.glitch.me`,
+            heroku: a => `arras-${a}.herokuapp.com`,
+            arras: (a, e = 5E3) => `ip-${a}.arras.io:${e}`
       };
       var w = new Date().getDate();
       const a = 25 <= w ? 3 : 0;
@@ -4407,7 +4405,7 @@
                     id: "p",
                     type: "",
                     code: "usa_md-1-dev",
-                    at: p.glitch("localservernetworkka2arrasglitchtestbedevent"),
+                    at: p.glitch("succulent-panoramic-nutria"),
                     untrusted: !0,
                     secure: -1,
                     prefer: !0,
