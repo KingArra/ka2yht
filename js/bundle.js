@@ -3445,21 +3445,21 @@
                   (m -= 40));
                 if (B.graphical.screenshotMode)
                   W[6].draw(
-                    "Arras.io",
+                    "KA2 Arras",
                     h + 200,
                     m - 2,
                     15,
-                    l.guiwhite,
+                    l.blue,
                     "right"
                   );
                 else {
                   if (b.showDebug) {
                     W[6].draw(
-                      "Arras.io",
+                      "KA2 Arras",
                       h + 200,
                       m - 84 - 2,
                       15,
-                      l.guiwhite,
+                      l.blue,
                       "right"
                     );
                     let b = t.getPeriodicAverage();
@@ -3492,7 +3492,7 @@
                     );
                   } else
                     W[6].draw(
-                      "Arras.io",
+                      "Arras.",
                       h + 200,
                       m - 42 - 2,
                       15,
@@ -3543,7 +3543,7 @@
                       : 0));
                 0 < O.data.length &&
                   V.draw(
-                    "Leaderboard",
+                    "Scoreboard",
                     Math.round(c + 100) + 0.5,
                     Math.round(d - 10) + 0.5,
                     18,
