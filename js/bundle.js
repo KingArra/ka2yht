@@ -2161,7 +2161,7 @@
                 S.push({ delta: c, latency: d });
                 if (10 > S.length)
                   setTimeout(() => g.talk("S", Date.now() - P - Q), 75),
-                    (b.message = `Loading... ${10 * S.length}%`);
+                    (b.message = `Syncing clocks, please do not tab away!... ${1*S.length}/10...`);
                 else {
                   S.sort((b, a) => b.latency - a.latency);
                   let a = S[Math.floor(S.length / 2)].latency,
@@ -3492,11 +3492,11 @@
                     );
                   } else
                     W[6].draw(
-                      "Arras.",
+                      "KA2 Arras",
                       h + 200,
                       m - 42 - 2,
                       15,
-                      l.guiwhite,
+                      l.blue,
                       "right"
                     );
                   W[2].draw(
