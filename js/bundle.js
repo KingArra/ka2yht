@@ -3610,7 +3610,7 @@
                    b.clickables.upgrade.place(q++, c * n, d * n, 100 * n, 100 * n);
 
                     g.globalAlpha = 0.5;
-                    g.fillStyle = e(u + 10);
+                                        g.fillStyle = /*e(u + 10)*/l.orange;
                     G(c, d, 100, 100);
                     g.globalAlpha = 0.1;
                     g.fillStyle = e(u);
@@ -4309,7 +4309,7 @@
               { id: "4", to: "4 Team", end: "4TDM" }
             ],
             [
-              { id: "d", to: "Domination" },
+              { id: "d", to: "4TDM Maze" },
               { id: "m", to: "Mothership", remove: "2" },
               { id: "a", to: "Assault", remove: "2" }
             ]
@@ -4337,7 +4337,7 @@
             visible: 0,
             id: "2",
             type: "FFA Maze",
-            code: "glitch-worldwide-2",
+            code: "glitch-worldwide-m",
             at: p.glitch('puzzling-marshy-drive'),
             prefer: !0,
            // featured: 1, // For Featured Status.
@@ -4349,6 +4349,14 @@
             type: "Defender Mode",
             code: "glitch-worldwide-3",
             at: p.glitch('destroytheattacker'),
+           // featured: 1, // For Featured Status.
+                },
+          {
+            visible: 0,
+            id: "d",
+            type: "4TDM Maze",
+            code: "glitch-worldwide-d",
+            at: p.glitch('short-diamond-pumpkin'),
            // featured: 1, // For Featured Status.
             
   }, 
