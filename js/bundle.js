@@ -4309,7 +4309,7 @@
             [{ id: "m", to: "Maze", delay: !0, remove: "f" }],
             [
               { id: "f", to: "Defender Mode" },
-              { id: "2", to: "2 Team", end: "2TDM" },
+              { id: "2", to: "2 Team", end: "FFA Maze" },
               { id: "3", to: "3 Team", end: "Defender Mode" },
               { id: "4", to: "4 Team", end: "4TDM" }
             ],
@@ -4340,10 +4340,10 @@
                       },
           {
             visible: 0,
-            id: "4",
-            type: "4TDM",
-            code: "glitch-worldwide-4",
-            at: p.glitch('succulent-panoramic-nutria'),
+            id: "2",
+            type: "FFA Maze",
+            code: "glitch-worldwide-2",
+            at: p.glitch('puzzling-marshy-drive'),
             prefer: !0,
            // featured: 1, // For Featured Status.
 
