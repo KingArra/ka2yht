@@ -3607,13 +3607,8 @@
                   A.upgrades.forEach(m => {
                     d > k && (k = d);
                     h = c;
-                    b.clickables.upgrade.place(
-                      q++,
-                      c * n,
-                      d * n,
-                      100 * n,
-                      100 * n
-                    );
+                   b.clickables.upgrade.place(q++, c * n, d * n, 100 * n, 100 * n);
+
                     g.globalAlpha = 0.5;
                     g.fillStyle = e(u + 10);
                     G(c, d, 100, 100);
