@@ -2146,7 +2146,7 @@
                   (qa = setInterval(() => {
                     Y.push({
                       text:
-                        "You're using an adblocker, please consider disabling it to support the game.",
+                        "The game detects you are using an adblocker, please consider disabling it to support the game.",
                       status: 2,
                       alpha: 0,
                       time: Date.now()
