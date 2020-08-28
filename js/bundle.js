@@ -3605,20 +3605,19 @@
                   let u = 0,
                     q = 0;
                   A.upgrades.forEach(m => {
-                    d > k && (k = d);
-                    h = c;
-                   b.clickables.upgrade.place(q++, c * n, d * n, 100 * n, 100 * n);
-
-                    g.globalAlpha = 0.5;
+                     d > k && (k = d);
+                                        h = c;
+                                        b.clickables.upgrade.place(q++, c * n, d * n, 100 * n, 100 * n);
+                                        g.globalAlpha = 1;
                                         g.fillStyle = /*e(u + 10)*/l.orange;
-                    G(c, d, 100, 100);
-                    g.globalAlpha = 0.1;
-                    g.fillStyle = e(u);
-                    u++;
-                    G(c, d, 100, 60);
-                    g.fillStyle = l.black;
-                    G(c, d + 60, 100, 40);
-                    g.globalAlpha = 1;
+                                        G(c, d, 100, 100);
+                                        g.globalAlpha = .1;
+                                        g.fillStyle = e(u);
+                                        u++;
+                                        G(c, d, 100, 60);
+                                        g.fillStyle = l.black;
+                                        G(c, d + 60, 100, 40);
+                                        g.globalAlpha = 1;
                     let t = D(m, A.color);
                     m = M[m].position;
                     let v = 60 / m.axis;
@@ -4309,7 +4308,7 @@
               { id: "4", to: "4 Team", end: "4TDM" }
             ],
             [
-              { id: "d", to: "4TDM Maze" },
+              { id: "d", to: "2TDM Maze" },
               { id: "m", to: "Mothership", remove: "2" },
               { id: "a", to: "Assault", remove: "2" }
             ]
@@ -4354,9 +4353,9 @@
           {
             visible: 0,
             id: "d",
-            type: "4TDM Maze",
+            type: "2TDM Maze",
             code: "glitch-worldwide-d",
-            at: p.glitch('short-diamond-pumpkin'),
+            at: p.glitch('juvenile-horse-cut'),
            // featured: 1, // For Featured Status.
             
   }, 
