@@ -685,6 +685,8 @@
               "center"
             ),
             (g.globalAlpha = 1));
+          
+          
         }
       }
       function za() {
