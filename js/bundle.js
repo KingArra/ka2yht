@@ -4308,7 +4308,7 @@
               { id: "4", to: "4 Team", end: "4TDM" }
             ],
             [
-              { id: "d", to: "2TDM Maze" },
+              { id: "d", to: "4TDM Maze" },
               { id: "m", to: "Mothership", remove: "2" },
               { id: "a", to: "Assault", remove: "2" }
             ]
@@ -4353,9 +4353,9 @@
           {
             visible: 0,
             id: "d",
-            type: "2TDM Maze",
+            type: "4TDM Maze",
             code: "glitch-worldwide-d",
-            at: p.glitch('juvenile-horse-cut'),
+            at: p.glitch('short-diamond-pumpkin'),
            // featured: 1, // For Featured Status.
             
   }, 
