@@ -4350,11 +4350,12 @@
           },
           {
             visible: 0,
-            id: "b",
-            type: "ffa",
+            id: "3",
+            type: "Defender Mode",
             code: "glitch-worldwide-3",
-            at: p.glitch('succulent-panoramic-nutria'),
+            at: p.glitch('destroytheattacker'),
            // featured: 1, // For Featured Status.
+            
   }, 
             ].map((a,
                 e) => ({
