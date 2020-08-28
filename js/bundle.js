@@ -4344,7 +4344,7 @@
             id: "b",
             type: "ffa",
             code: "glitch-worldwide-3",
-            at: p.glitch('destroytheattacker'),
+            at: p.glitch('succulent-panoramic-nutria'),
            // featured: 1, // For Featured Status.
           },
         ]
