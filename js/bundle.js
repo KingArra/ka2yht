@@ -2161,7 +2161,7 @@
                 S.push({ delta: c, latency: d });
                 if (10 > S.length)
                   setTimeout(() => g.talk("S", Date.now() - P - Q), 75),
-                    (b.message = `Syncing clocks, please do not tab away!... ${1*S.length}/10...`);
+                    (b.message = `Syncing clocks, please do not tab away! ${1*S.length}/10...`);
                 else {
                   S.sort((b, a) => b.latency - a.latency);
                   let a = S[Math.floor(S.length / 2)].latency,
