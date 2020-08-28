@@ -4272,158 +4272,96 @@
         showDebug: !1,
         showTree: !1,
         server: null,
-          codeTable: [{
-                    z: "Private",
-                    local: "Local",
-                    glitch: "Glitch",
-                    os: "OpenShift",
-                    linode: "Linode",
-                    vultr: "Vultr",
-                    buyvm: "BuyVM",
-                    extravm: "ExtraVM",
-                    ovh: "OVH",
-                    usa_md: "Glitch",
-                }, {
-                    unknown: ["Unknown", null],
-                    local: ["Local", null],
-                    sv: ["US West", -7],
-                    la: ["US West", -7],
-                    1: ["US East", 2],   
-                    singapore: ["Asia", 8],
-                    
-                  
-                },
-                [ //Gamemode Names
-                    [{
-                        id: "p",
-                        to: "Private"
-                    }],
-                    [{
-                        id: "e",
-                        dynamic: "word"
-                    }],
-                    [{
-                        id: "w",
-                        dynamic: "words"
-                    }],
-                    [{
-                        id: "o",
-                        to: "Open 3TDM"
-                    }],
-                    [{
-                        id: "m",
-                        to: "FFA Maze",
-                        delay: !0,
-                        remove: "f"
-                    }],
-                    [{
-                        id: "f",
-                        to: "Developer Server"
-                    }, {
-                        id: "2",
-                        to: "2 Team",
-                        end: "2TDM"
-                    }, {
-                        id: "3",
-                        to: "3 Team",
-                        end: "3TDM"
-                    }, {
-                        id: "4",
-                        to: "4 Team",
-                        end: "4TDM"
-                    }],
-                    [{
-                        id: "d",
-                        to: "TESBTED Event"
-                    }, {
-                        id: "m",
-                        to: "Mothership",
-                        remove: "2"
-                    }, {
-                        id: "a",
-                        to: "Assault",
-                        remove: "2"
-                    }, {
-                        id: "t",
-                        to: "2-2 Team",
-                        end: "Defender Mode"
-                    }]
-                ]
+          codeTable: [
+          {
+            z: "Private",
+            local: "Local",
+            dvi: "DVI",
+            glitch: "Glitch",
+            os: "OpenShift",
+            heroku: "Heroku",
+            linode: "Linode",
+            vultr: "Vultr",
+            buyvm: "BuyVM",
+            extravm: "ExtraVM",
+            hetzner: "Hetzner",
+            ovh: "OVH"
+          },
+          {
+            unknown: ["Unknown", null],
+            local: ["Local", null],
+            worldwide: ["Worldwide", null],
+            virginia: ["US East", -4],
+            montreal: ["US East", -4],
+            oregon: ["US West", -7],
+            frankfurt: ["Europe", 2],
+            sv: ["US West", -7],
+            la: ["US West", -7],
+            germany: ["Europe", 2],
+            london: ["Europe", 1],
+            singapore: ["Asia", 8]
+          },
+          [
+            [{ id: "p", to: "Private" }],
+            [{ id: "e", dynamic: "word" }],
+            [{ id: "w", dynamic: "words" }],
+            [{ id: "o", to: "Open" }],
+            [{ id: "m", to: "Maze", delay: !0, remove: "f" }],
+            [
+              { id: "f", to: "FFA" },
+              { id: "2", to: "2 Team", end: "2TDM" },
+              { id: "3", to: "3 Team", end: "3TDM" },
+              { id: "4", to: "4 Team", end: "4TDM" }
             ],
-            timezone: (new Date).getTimezoneOffset() / -60,
-            servers: [{ //The glitch servers that it connects to (The one with id: z is for private servers that you can connect to it.)
-                    id: "z",
-                    type: "0unk",
-                    code: "z-unknown-pe6server",
-                    at: "private",
-                    untrusted: !0,
-                    secure: -1
-                                             }, {
-                    visible: 0,
-                    id: "m",
-                    type: "Maze",
-                    code: "usa_md-1-m",
-                    at: p.glitch("puzzling-marshy-drive"),
-                    untrusted: !0,
-                    secure: -1,
-                    prefer: !0,
-                    //featured: !0
-                                                               }, {
+            [
+              { id: "d", to: "Domination" },
+              { id: "m", to: "Mothership", remove: "2" },
+              { id: "a", to: "Assault", remove: "2" }
+            ]
+          ]
+        ],
+        timezone: new Date().getTimezoneOffset() / -60,
+        servers: [
+          {
+            id: "z",
+            type: "0unk",
+            code: "z-unknown-pe6server",
+            at: "private",
+            untrusted: !0
+          },
+          {
+            visible: 0,
+            id: "a",
+            type: "ffa",
+            code: "glitch-worldwide-f",
+            at: p.glitch('your-server'),
+            prefer: !0,
+           // featured: 1, // For Featured Status.
 
-                    visible: 0,
-                    id: "a",
-                    type: "4TDM",
-                    code: "usa_md-1-4",
-                    at: p.glitch("hammerhead-likeable-wishbone"),
-                    untrusted: !0,
-                    secure: -1,
-                    prefer: !0,
-                    //featured: !0 //Add this if you want the server to show golden on the menu
-                }, {
-                    visible: 0,
-                    id: "b",
-                    type: "FFA",
-                    code: "usa_md-1-ffa",
-                    at: p.glitch("fascinated-magenta-giraffe"),
-                    untrusted: !0,
-                    secure: -1,
-                    prefer: !0,
-                    //featured: !0
-                }, {
-          
-                    visible: 0,
-                    id: "c",
-                    type: "Defender Mode",
-                    code: "usa_md-1-t",
-                    at: p.glitch("destroytheattacker"),
-                    untrusted: !0,
-                    secure: -1,
-                    prefer: !0,
-                  
-                                  }, {
-                    visible: 0,
-                    id: "p",
-                    type: "",
-                    code: "usa_md-1-dev",
-                    at: p.glitch("succulent-panoramic-nutria"),
-                    untrusted: !0,
-                    secure: -1,
-                    prefer: !0,
-                
-                  
-                }, 
-            ].map((a,
-                e) => ({
-                data: a,
-                i: e
-            })).sort((a, e) => a.data.type < e.data.type ? -1 : e.data.type > a.data.type ? 1 : a.i - e.i).map(({
-                data: a
-            }) => a),
-            partyLink: 0,
-            mobile: /android|mobi/i.test(navigator.userAgent),
-            showInvisible: !1
-        };
-        window.Arras = (a = !0) => a || e;
+          },
+          {
+            visible: 0,
+            id: "b",
+            type: "ffa",
+            code: "glitch-worldwide-3",
+            at: p.glitch('destroytheattacker'),
+           // featured: 1, // For Featured Status.
+          },
+        ]
+          .map((a, e) => ({ data: a, i: e }))
+          .sort((a, e) =>
+            a.data.type < e.data.type
+              ? -1
+              : e.data.type > a.data.type
+              ? 1
+              : a.i - e.i
+          )
+          .map(({ data: a }) => a),
+        partyLink: 0,
+        mobile: /android|mobi/i.test(navigator.userAgent),
+        showInvisible: !1
+      };
+      window.Arras = (a = !0) => a || e;
       r.exports = e;
     },
     function(r, p) {
