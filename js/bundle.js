@@ -254,45 +254,47 @@
         let d = B.graphical.neon ? l.white : l.black;
         return B.graphical.darkBorders ? d : T(b, d, l.border);
       }
-      function x(b) {
-        switch (b) {
-          case "bas1":
-          case "bap1":
-          case "dom1":
-          case "dbc1":
-          case "mbc1":
-            return l.blue;
-          case "bas2":
-          case "bap2":
-          case "dom2":
-          case "dbc2":
-          case "mbc2":
-            return l.green;
-          case "bas3":
-          case "bap3":
-          case "dom3":
-          case "dbc3":
-          case "mbc3":
-            return l.red;
-          case "bas4":
-          case "bap4":
-          case "dom4":
-          case "dbc4":
-          case "mbc4":
-            return l.pink;
-          case "domx":
-          case "dom0":
-          case "dbc0":
-          case "mbc0":
-            return l.yellow;
-          case "port":
-            return (g.globalAlpha = 1), l.black;
-          case "edge":
-            return T(l.white, l.guiblack, 1 / 3);
-          case "dor1":
-            return l.vlgrey;
-          default:
-            return l.white;
+         function v(b) { //For tile colors
+            switch (b) {
+                case "bas1":
+                case "bap1":
+                case "dom1":
+                case "dbc1":
+                case "mbc1":
+                    return l.blue;
+                case "bas2":
+                case "bap2":
+                case "dom2":
+                case "dbc2":
+                case "mbc2":
+                    return l.green;
+                case "bas3":
+                case "bap3":
+                case "dom3":
+                case "dbc3":
+                case "mbc3":
+                    return l.red;
+                case "bas4":
+                case "bap4":
+                case "dom4":
+                case "dbc4":
+                case "mbc4":
+                    return l.pink;
+                case "domx":
+                case "dom0":
+                case "dbc0":
+                case "mbc0":
+                    return l.yellow;
+                case "port":
+                    return l.globalAlpha = 1, l.black;
+                case "edge":
+                    return l(l.white, l.guiblack, 1 / 3);
+                case "dor1":
+                    return l.vlgrey;
+                case "nest":
+                    return l.purple /*return l.white*/;
+                default:
+                    return l.white
         }
       }
       function k(b, n) {
@@ -2161,7 +2163,7 @@
                 S.push({ delta: c, latency: d });
                 if (10 > S.length)
                   setTimeout(() => g.talk("S", Date.now() - P - Q), 75),
-                    (b.message = `Syncing clocks, please do not tab away!... ${1*S.length}/10...`);
+                    (b.message = `Syncing clocks, please do not tab away! ${1*S.length}/10...`);
                 else {
                   S.sort((b, a) => b.latency - a.latency);
                   let a = S[Math.floor(S.length / 2)].latency,
@@ -4290,7 +4292,7 @@
           {
             unknown: ["Unknown", null],
             local: ["Local", null],
-            worldwide: ["Worldwide", null],
+            worldwide: ["(US) East", null],
             virginia: ["US East", -4],
             montreal: ["US East", -4],
             oregon: ["US West", -7],
