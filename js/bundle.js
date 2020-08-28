@@ -2161,7 +2161,7 @@
                 S.push({ delta: c, latency: d });
                 if (10 > S.length)
                   setTimeout(() => g.talk("S", Date.now() - P - Q), 75),
-                    (b.message = `Syncing clocks, please do not tab away! ${1*S.length}/10...`);
+                    (b.message = `Syncing clocks, please do not tab away!... ${1*S.length}/10...`);
                 else {
                   S.sort((b, a) => b.latency - a.latency);
                   let a = S[Math.floor(S.length / 2)].latency,
@@ -4290,7 +4290,7 @@
           {
             unknown: ["Unknown", null],
             local: ["Local", null],
-            worldwide: ["(US)East", null],
+            worldwide: ["Worldwide", null],
             virginia: ["US East", -4],
             montreal: ["US East", -4],
             oregon: ["US West", -7],
@@ -4310,7 +4310,7 @@
             [
               { id: "f", to: "FFA" },
               { id: "2", to: "2 Team", end: "2TDM" },
-              { id: "3", to: "3 Team", end: "Defender Mode" },
+              { id: "3", to: "3 Team", end: "3TDM" },
               { id: "4", to: "4 Team", end: "4TDM" }
             ],
             [
