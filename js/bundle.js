@@ -4290,7 +4290,7 @@
           {
             unknown: ["Unknown", null],
             local: ["Local", null],
-            worldwide: ["Worldwide", null],
+            worldwide: ["East (US)", null],
             virginia: ["US East", -4],
             montreal: ["US East", -4],
             oregon: ["US West", -7],
@@ -4308,9 +4308,9 @@
             [{ id: "o", to: "Open" }],
             [{ id: "m", to: "Maze", delay: !0, remove: "f" }],
             [
-              { id: "f", to: "FFA" },
+              { id: "f", to: "Defender Mode" },
               { id: "2", to: "2 Team", end: "2TDM" },
-              { id: "3", to: "3 Team", end: "3TDM" },
+              { id: "3", to: "3 Team", end: "Defender Mode" },
               { id: "4", to: "4 Team", end: "4TDM" }
             ],
             [
@@ -4320,7 +4320,7 @@
             ]
           ]
         ],
-        timezone: new Date().getTimezoneOffset() / -60,
+            timezone: (new Date).getTimezoneOffset() / -60,
         servers: [
           {
             id: "z",
@@ -4331,10 +4331,10 @@
           },
           {
             visible: 0,
-            id: "a",
-            type: "ffa",
-            code: "glitch-worldwide-f",
-            at: p.glitch('your-server'),
+            id: "4",
+            type: "4TDM",
+            code: "glitch-worldwide-4",
+            at: p.glitch('succulent-panoramic-nutria'),
             prefer: !0,
            // featured: 1, // For Featured Status.
 
@@ -4346,22 +4346,19 @@
             code: "glitch-worldwide-3",
             at: p.glitch('succulent-panoramic-nutria'),
            // featured: 1, // For Featured Status.
-          },
-        ]
-          .map((a, e) => ({ data: a, i: e }))
-          .sort((a, e) =>
-            a.data.type < e.data.type
-              ? -1
-              : e.data.type > a.data.type
-              ? 1
-              : a.i - e.i
-          )
-          .map(({ data: a }) => a),
-        partyLink: 0,
-        mobile: /android|mobi/i.test(navigator.userAgent),
-        showInvisible: !1
-      };
-      window.Arras = (a = !0) => a || e;
+  }, 
+            ].map((a,
+                e) => ({
+                data: a,
+                i: e
+            })).sort((a, e) => a.data.type < e.data.type ? -1 : e.data.type > a.data.type ? 1 : a.i - e.i).map(({
+                data: a
+            }) => a),
+            partyLink: 0,
+            mobile: /android|mobi/i.test(navigator.userAgent),
+            showInvisible: !1
+        };
+        window.Arras = (a = !0) => a || e;
       r.exports = e;
     },
     function(r, p) {
