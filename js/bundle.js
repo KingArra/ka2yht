@@ -4314,7 +4314,7 @@
               { id: "f", to: "Defender Mode" },
               { id: "2", to: "2 Team", end: "FFA Maze" },
               { id: "3", to: "3 Team", end: "Defender Mode" },
-              { id: "4", to: "4 Team", end: "4TDM" }
+              { id: "4", to: "4 Team", end: "Open 2TDM" }
             ],
             [
               { id: "d", to: "4TDM Maze" },
@@ -4337,7 +4337,7 @@
             id: "4",
             type: "4TDM",
             code: "glitch-worldwide-4",
-            at: p.glitch('succulent-panoramic-nutria'),
+            at: p.glitch('hospitable-chisel-cairnsmore'),
             prefer: !0,
            // featured: 1, // For Featured Status.
                       },
