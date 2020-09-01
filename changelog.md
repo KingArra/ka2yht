@@ -1,3 +1,10 @@
+# <u>PATCH 09/01/2020: Site Changes</u>
+
+- Added Dominators and Bosses to Developer Branch.
+
+- Deployed KA2 Arras to a Netlify Domain.
+
+
 # <u>PATCH 08/24/2020: The Bots are taking over, lol</u>
 
 - There is a weird Bug in Defender Mode, people can publicly access TESBED. Founded by Dev Moslem.
