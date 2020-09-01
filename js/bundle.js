@@ -2163,7 +2163,7 @@
                 S.push({ delta: c, latency: d });
                 if (10 > S.length)
                   setTimeout(() => g.talk("S", Date.now() - P - Q), 75),
-                    (b.message = `Syncing clocks, please do not tab away! ${1*S.length}/10...`);
+                    (b.message = `Syncing clocks, please do not tab away! Progress: ${1*S.length}/10...`);
                 else {
                   S.sort((b, a) => b.latency - a.latency);
                   let a = S[Math.floor(S.length / 2)].latency,
@@ -4309,7 +4309,7 @@
               { id: "f", to: "Defender Mode" },
               { id: "2", to: "2 Team", end: "FFA Maze" },
               { id: "3", to: "3 Team", end: "Defender Mode" },
-              { id: "4", to: "4 Team", end: "2TDM" }
+              { id: "4", to: "4 Team", end: "4TDM" }
             ],
             [
               { id: "d", to: "4TDM Maze" },
