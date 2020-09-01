@@ -3473,7 +3473,7 @@
                       h + 200,
                       m - 70,
                       10,
-                      l.guiwhite,
+                      l.blue,
                       "right"
                     );
                     W[4].draw(
@@ -3481,7 +3481,7 @@
                       h + 200,
                       m - 56,
                       10,
-                      l.guiwhite,
+                      l.red,
                       "right"
                     );
                     W[3].draw(
@@ -3489,7 +3489,7 @@
                       h + 200,
                       m - 42,
                       10,
-                      l.guiwhite,
+                      l.blue,
                       "right"
                     );
                   } else
@@ -3506,7 +3506,7 @@
                     h + 200,
                     m - 28,
                     10,
-                    10 < J.rendertime ? l.guiwhite : l.orange,
+                    10 < J.rendertime ? l.green : l.orange,
                     "right"
                   );
                   W[1].draw(
@@ -3514,7 +3514,7 @@
                     h + 200,
                     m - 14,
                     10,
-                    1 === A.fps ? l.guiwhite : l.orange,
+                    1 === A.fps ? l.yellow : l.orange,
                     "right"
                   );
                   W[0].draw(
@@ -3527,7 +3527,7 @@
                     h + 200,
                     m,
                     10,
-                    l.guiwhite,
+                    l.purple,
                     "right"
                   );
                 }
