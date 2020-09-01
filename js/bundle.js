@@ -2281,7 +2281,7 @@
               b.died ||
                 b.message ||
                 (b.message =
-                  "Socket closed. If you disconnected, respawn now to regain your score."));
+                  "The connection was lost for an unknown reason. Maybe check your internet, or if the server is down?"));
             console.warn("WebSocket closed: ", a);
           };
           g.onerror = function(a) {
@@ -3785,7 +3785,9 @@
                           "center"
                         );
                       g.strokeStyle = l.black;
-                      g.globalAlpha = 1;
+                      g.
+                      
+                      Alpha = 1;
                       g.lineWidth = 3;
                       ka(f, 20 + (2 * d) / 3, f + 100, 20 + (2 * d) / 3);
                       G(f, 20, 100, d, !0);
