@@ -3989,7 +3989,7 @@
                       ],
             [
               "Join the KA2 Arras Discord!",
-              "Didn't Subscribe to King Arras? Go to youtube.com/kingarras now!",
+              "Didn't Subscribe to King Arras? Go to youtube.com/kingarras2 now!",
               "Police Boosters are allowed to kill people who abuse the game!"
             ]
           ];
