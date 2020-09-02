@@ -1,3 +1,12 @@
+# <u>PATCH 09/02/2020</u>
+
+- Fixed Developer Branches in 4TDM
+
+- Fixed 4TDM Tank definitions. 
+
+- Updated Token System. 
+
+
 # <u>PATCH 09/01/2020: Site Changes</u>
 
 - Added Dominators and Bosses to Developer Branch.
