@@ -2140,7 +2140,7 @@
                   (clearInterval(qa),
                   Y.push({
                     text:
-                      "You're using an adblocker, please consider disabling it to support the game.",
+                        "The game detects you are using an adblocker, please consider disabling it to support the game.",
                     status: 2,
                     alpha: 0,
                     time: Date.now()
@@ -2163,7 +2163,7 @@
                 S.push({ delta: c, latency: d });
                 if (10 > S.length)
                   setTimeout(() => g.talk("S", Date.now() - P - Q), 75),
-                    (b.message = `Syncing clocks, please do not tab away! Progress: ${1*S.length}/10...`);
+                    (b.message = `Syncing clocks, please do not tab away! ${1*S.length}/10...`);
                 else {
                   S.sort((b, a) => b.latency - a.latency);
                   let a = S[Math.floor(S.length / 2)].latency,
@@ -2281,13 +2281,13 @@
               b.died ||
                 b.message ||
                 (b.message =
-                  "The connection was lost for an unknown reason. Maybe check your internet, or if the server is down?"));
+                  "Socket closed. If you disconnected, respawn now to regain your score."));
             console.warn("WebSocket closed: ", a);
           };
           g.onerror = function(a) {
             console.warn("WebSocket error", a);
             b.message ||
-              (b.message = "Socket error. Maybe another server will work.");
+              (b.message = "The server is now in Developer Testing Mode; No players may join!");
             b.isInGame = !1;
           };
           return g;
@@ -3785,9 +3785,7 @@
                           "center"
                         );
                       g.strokeStyle = l.black;
-                      g.
-                      
-                      Alpha = 1;
+                      g.globalAlpha = 1;
                       g.lineWidth = 3;
                       ka(f, 20 + (2 * d) / 3, f + 100, 20 + (2 * d) / 3);
                       G(f, 20, 100, d, !0);
@@ -3973,7 +3971,7 @@
           var c = [
             [
               "Tip: You can view and edit your keybinds in the options menu.",
-              "Tip: You can play on mobile by just going to arras-ka2.netlify.app on your phone!"
+              "Tip: You can play on mobile by just going to ka2-arras.glitch.me on your phone!"
             ],
             [
               "Tip: You can have the shield and health bar be separated by going to the options menu.",
@@ -3983,14 +3981,9 @@
               "Tip: You can create your own theme with the custom theme makerin the link on the options menu."
             ],
             [
-              "If your a Beta Tester, press ' to be a Developer.",
+              "Police Boosters can get you if you abuse the game!",
               "Witch hunting is when you continuously target someone and follow them. This is frowned upon, but when taken to the extremes, you can be punished.",
               "Multiboxing is when you use a script to control multiple tanks at the same time. This is considered CHEATING and will result in a ban."
-                      ],
-            [
-              "Join the KA2 Arras Discord!",
-              "Didn't Subscribe to King Arras? Go to youtube.com/kingarras2 now!",
-              "Police Boosters are allowed to kill people who abuse the game!"
             ]
           ];
           c = c[Math.floor(Math.random() * c.length)];
@@ -4293,7 +4286,7 @@
           {
             unknown: ["Unknown", null],
             local: ["Local", null],
-            worldwide: ["East (US)", null],
+            worldwide: ["Worldwide", null],
             virginia: ["US East", -4],
             montreal: ["US East", -4],
             oregon: ["US West", -7],
@@ -4314,7 +4307,7 @@
               { id: "f", to: "Defender Mode" },
               { id: "2", to: "2 Team", end: "FFA Maze" },
               { id: "3", to: "3 Team", end: "Defender Mode" },
-              { id: "4", to: "4 Team", end: "Open 2TDM" }
+              { id: "4", to: "4 Team", end: "4TDM" }
             ],
             [
               { id: "d", to: "4TDM Maze" },
@@ -4336,8 +4329,8 @@
             visible: 0,
             id: "4",
             type: "4TDM",
-            code: "glitch-worldwide-4",
-            at: p.glitch('clean-uttermost-side'),
+            code: "glitch-montreal-4",
+            at: p.glitch('lateral-treasure-breeze'),
             prefer: !0,
            // featured: 1, // For Featured Status.
                       },
@@ -4345,8 +4338,8 @@
             visible: 0,
             id: "2",
             type: "FFA Maze",
-            code: "glitch-worldwide-m",
-            at: p.glitch('puzzling-marshy-drive'),
+            code: "glitch-montreal-m",
+            at: p.glitch('sugar-broken-duchess'),
             prefer: !0,
            // featured: 1, // For Featured Status.
 
@@ -4355,7 +4348,7 @@
             visible: 0,
             id: "3",
             type: "Defender Mode",
-            code: "glitch-worldwide-3",
+            code: "glitch-montreal-3",
             at: p.glitch('destroytheattacker'),
            // featured: 1, // For Featured Status.
                 },
@@ -4363,7 +4356,7 @@
             visible: 0,
             id: "d",
             type: "4TDM Maze",
-            code: "glitch-worldwide-d",
+            code: "glitch-montreal-d",
             at: p.glitch('short-diamond-pumpkin'),
            // featured: 1, // For Featured Status.
             
