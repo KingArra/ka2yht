@@ -1,3 +1,8 @@
+# <u>PATCH 09/04/2020</u>
+
+- Added Page IV for Beta Tester Tanks.
+
+
 # <u>PATCH 09/02/2020</u>
 
 - Fixed Developer Branches in 4TDM
