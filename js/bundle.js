@@ -4302,7 +4302,7 @@
             [{ id: "e", dynamic: "word" }],
             [{ id: "w", dynamic: "words" }],
             [{ id: "o", to: "Open" }],
-            [{ id: "m", to: "Maze", delay: !0, remove: "f" }],
+            [{ id: "m", to: "Developer Server", delay: !0, remove: "f" }],
             [
               { id: "f", to: "Defender Mode" },
               { id: "2", to: "2 Team", end: "FFA Maze" },
@@ -4312,7 +4312,7 @@
             [
               { id: "d", to: "4TDM Maze" },
               { id: "m", to: "Mothership", remove: "2" },
-              { id: "a", to: "Developer Server", remove: "2" }
+              { id: "a", to: "Maze", remove: "2" }
             ]
           ]
         ],
@@ -4339,7 +4339,7 @@
             id: "2",
             type: "FFA Maze",
             code: "glitch-montreal-m",
-            at: p.glitch('sugar-broken-duchess'),
+            at: p.glitch('developerserverka2arrasclient'),
             prefer: !0,
            // featured: 1, // For Featured Status.
 
@@ -4356,7 +4356,7 @@
             id: "a",
             type: "Developer Server",
             code: "glitch-montreal-a",
-            at: p.glitch('unknowndeveloperservertoken'),
+            at: p.glitch('sugar-broken-duchess'),
            // featured: 1, // For Featured Status.
                 },
           {
