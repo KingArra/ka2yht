@@ -1,3 +1,7 @@
+# <u>PATCH 09/07/2020</u>
+
+- Added a Developer Server to the Server Selector.
+
 # <u>PATCH 09/06/2020</u>
 
 - Added Tripathan to the Page IV (Developer Branch)
