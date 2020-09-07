@@ -4312,7 +4312,7 @@
             [
               { id: "d", to: "4TDM Maze" },
               { id: "m", to: "Mothership", remove: "2" },
-              { id: "a", to: "Assault", remove: "2" }
+              { id: "a", to: "Developer Server", remove: "2" }
             ]
           ]
         ],
@@ -4350,6 +4350,13 @@
             type: "Defender Mode",
             code: "glitch-montreal-3",
             at: p.glitch('destroytheattacker'),
+                  },
+          {
+            visible: 0,
+            id: "a",
+            type: "Developer Server",
+            code: "glitch-montreal-a",
+            at: p.glitch('unknowndeveloperservertoken'),
            // featured: 1, // For Featured Status.
                 },
           {
