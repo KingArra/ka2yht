@@ -1,3 +1,10 @@
+# <u>PATCH 09/08/2020</u>
+
+- Added a feature: Entering a Developer Token and pressing X will allow you to control the Base Protector on your team.
+
+- Finishing the Base work for the big Client Update
+
+
 # <u>PATCH 09/07/2020</u>
 
 - Added a Developer Server to the Server Selector.
