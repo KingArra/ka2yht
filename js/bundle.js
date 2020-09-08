@@ -2,7 +2,6 @@ var metalball = new Image();
 var metalballLoaded = false;
 metalball.crossOrigin = "Anonymous";
 metalball.src =
-  "https://cdn.glitch.com/4f73a6dd-0487-4f28-8921-8c3dcd804bc6%2F9e54ba70-846f-4dbe-99a0-e39c108bc39c.image.png?v=1598538579814";
 metalball.onload = function() {
   metalballLoaded = true;
 };
@@ -5729,7 +5728,7 @@ function startgameee() {
                   chatInput.style.font = "bold 18px Ubuntu";
                   chatInput.maxlength = "100";
                   chatInput.placeholder =
-                    "Type Your Messages here! Keep it short. Esc To Cancel.";
+                    "";
 
                   // Chat input wrapper div.
                   let chatInputWrapper = document.createElement("div");
